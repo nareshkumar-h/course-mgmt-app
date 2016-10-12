@@ -3,4 +3,4 @@ language:
 jdk: 
 	oraclejdk8
 script:
-	mvn verify
+	mvn test
