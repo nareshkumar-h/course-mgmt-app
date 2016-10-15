@@ -22,8 +22,8 @@ public class CourseController {
 	@GET
 	@Path(value="/")
 	public List<Course> index(){
-		System.out.println("Index API");
 		
+		System.out.println("Index API");		
 		List<Course> list = new ArrayList<Course>();
 		list.add(new Course(1L,"Java"));
 		
