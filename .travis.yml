@@ -1,7 +1,7 @@
 language: java
 jdk: oraclejdk8
 script: mvn clean install sonar:sonar -Dsonar.host.url=https://sonarqube.com -Dsonar.login=5e1d0fe1fe34394952a7eed5a6ec2b9e7074e338
-after_success:
-  - coveralls
 notifications:
   slack: spinsoft:66bQCuLYto2jcbOSH3TdCaDD
+after_success:
+  - mvn clean cobertura:cobertura coveralls:report
